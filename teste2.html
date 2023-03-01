@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reinf PDF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,500;1,200&display=swap" rel="stylesheet">
+</head>
+
+<body style="margin: 30px;margin-right: 30px;margin-top: 100px;font-family: 'Mulish', sans-serif;font-weight: 500;">
+
+    <div style="border: 1px black solid;text-align: center; margin-bottom: 40px; background-color: rgb(37, 142, 233); color: aliceblue; font-weight: 600;" id="titulo_relatorio">
+        <p>RELATÓRIO DE CONSULTA DO ENVIO DOS ARQUIVOS DA EFD-REINF</p>
+    </div>
+
+    <div>
+        <p style="font-weight: 600;">Competencia : %vMes%/%vAno%</p>
+    </div>
+
+    <main>
+        <div style="border: 1px black solid;" id="corpo_conteudo">
+            <table style="padding-top: 15px;width: 100%%;">
+                <tr>
+                    <th style="height: 0px; padding: 0px 0px 0px 10px; text-align: left; height: 0px;" colspan="2" id="camp_titulo">EMPRESA</th>
+                    <th style="height: 0px; text-align: center; margin: 0px;" id="camp_titulo_2">CNPJ</th>
+                </tr>
+
+                <tr>
+                    <th style="height: 0px; text-align: left;padding-left: 10px;padding-bottom: 50px;font-weight: 100; width: 35%%;" colspan="2" id="camp_info_1">%dEmpresasPDF.EMPRESA%</th>
+                    <th style="height: 0px; text-align: center;padding-bottom: 50px;height: 10px; font-weight: 100;" id="camp_info_2">%vCNPJ%</th>
+                </tr>
+
+                <tr>
+                    <th style="height: 0px; padding: 0px 0px 0px 10px; text-align: left; height: 0px;" id="camp_titulo">EVENTO</th>
+                    <th style="height: 0px; text-align: center; margin: 0px;" id="camp_titulo_2">TIPO SITUAÇÃO</th>
+                    <th style="height: 0px; text-align: center;padding: 0px 10px 0px 0px;margin: 0px;height: 0px;" id="camp_titulo_3">STATUS</th>
+                </tr>
+
+                <tr>
+                    <th style="height: 0px; text-align: left;padding-left: 10px;padding-bottom: 50px;font-weight: 100; width: 35%%;" id="camp_info_1">R-2099-FECHAMENTO DOS EVENTOS PERIÓDICOS</th>
+                    <th style="height: 0px; text-align: center;padding-bottom: 50px;height: 10px; font-weight: 100;" id="camp_info_2">FECHAMENTO</th>
+                    <th style="height: 0px; text-align: center; padding-right: 10px; padding-bottom: 50px; font-weight: 100;" id="camp_info_3">%dEmpresasPDF.STATUS%</th>
+                </tr>
+
+                <tr>
+                    <th style="height: 0px; padding: 0px 0px 0px 10px; text-align: left; height: 0px;" id="camp_titulo">Nº RECIBO:</th>
+                    <th style="height: 0px; text-align: center; margin: 0px;" id="camp_titulo_2">DT/HR ENVIO:</th>
+                    <th style="height: 0px; text-align: center;padding: 0px 10px 0px 0px;margin: 0px;height: 0px;" id="camp_titulo_3">DT/HR RECIBO:</th>
+                </tr>
+
+                <tr>
+                    <th style="height: 0px; text-align: left;padding-left: 10px;padding-bottom: 50px;font-weight: 100; width: 35%%;" id="camp_info_1">%dEmpresasPDF.[NÚMERO DO RECIBO]%</th>
+                    <th style="height: 0px; text-align: center;padding-bottom: 50px;height: 10px; font-weight: 100;" id="camp_info_2">%dEmpresasPDF.[DATA/HORA DO ENVIO]%</th>
+                    <th style="height: 0px; text-align: center; padding-right: 10px; padding-bottom: 50px; font-weight: 100;" id="camp_info_3">%dEmpresasPDF.[DATA E HORA DA GERAÇÃO DO RECIBO]%</th>
+                </tr>
+
+            </table>
+        </div>
+
+        <footer style="padding-top: 100px;">
+            <address>
+                <div style="display: inline-block;">
+                    <img src="http://dirpf.confirpdigital.com.br/Content/Image/Confirp_logotipo.png" style="width: 250px;height: 60px; margin-left: 0px;" />
+                </div>
+                <div style="display: inline-block; text-align: right; float: right;font-family: 'Mulish', sans-serif;">
+                    <p>Rua Alba 96 | 1º ao 5 º andar | Jabaquara</p>
+                    <p>São Paulo - SP | CEP 04346-000</p>
+                    <p>11 - 5078 3000</p>
+                    <p>www.confirp.com</p>
+                </div>
+            </address>
+        </footer>
+    </main>
+
+</body>
+
+</html>
